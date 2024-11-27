@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                // Clone the Git repository test1ads
+                // Clone the Git repository test1adsadfs
                 git branch: 'main',
                     url: 'https://github.com/animesh88891/test-repo.git',
                     credentialsId: 'test-jenkins'
