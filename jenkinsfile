@@ -3,11 +3,11 @@ pipeline {
 
     stages {
         stage('Git Clone') {
-            steps {
-                script {
-                    // Clone the specified Git repository
-                    git branch: 'main', url: 'https://github.com/animesh88891/test-repo.git'
-                }
+           script {
+                    git branch: 'main',
+                        url: 'https://github.com/your-repo/your-private-repo.git',
+                        credentialsId: 'test-jenkins'
+                } 
             }
         }
 
