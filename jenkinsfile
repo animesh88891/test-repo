@@ -59,8 +59,8 @@ pipeline {
 
     post {
         always {
-            // Clean up any artifacts like the plan file
-            //sh 'rm -f tfplan'
+            // Clean up any artifacts like the plan filetest
+            sh 'rm -f tfplan'
         }
         success {
             echo 'Pipeline executed successfully!'
