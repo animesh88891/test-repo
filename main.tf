@@ -39,7 +39,7 @@ resource "aws_dynamodb_table" "terraform_lock" {
   }
   tags = {
  
-    "owner"   = "devops@anim23esh.in"
+    "owner"   = "devophgs@anim23esh.in"
     "Bu"      = "devops"
   }
 }
