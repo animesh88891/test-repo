@@ -10,7 +10,6 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-#test
 resource "aws_s3_bucket" "bucket_name" {
   bucket = "devops-tf-state-ls"
   lifecycle {
