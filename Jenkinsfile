@@ -10,7 +10,7 @@ pipeline {
                     credentialsId: 'test-jenkins'
             }
         }
-#test
+#testhgjad
         stage('Terraform Init') {
             steps {
                 script {
