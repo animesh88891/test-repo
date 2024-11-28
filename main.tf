@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "bucket_name" {
     prevent_destroy = true
   }
   tags = {
-    "owner"   = "devops@animesh.in"
+    "owner"   = "devsasops@animesh.in"
     "Bu"      = "devops"
   }
 }
