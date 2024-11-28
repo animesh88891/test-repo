@@ -56,16 +56,16 @@ pipeline {
         }
     }
 
-    // post {
-    //     always {
-    //         // Clean up any artifacts like the plan filetest
-    //         sh 'rm -f tfplan'
-    //     }
-    //     success {
-    //         echo 'Pipeline executed successfully!'
-    //     }
-    //     failure {
-    //         echo 'Pipeline failed. Please check the logs for errors.'
-    //     }
-    // }
+    post {
+        always {
+            // Clean up any artifacts like the plan filetest
+            sh 'rm -f tfplan'
+        }
+        success {
+            echo 'Pipeline executed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed. Please check the logs for errors.'
+        }
+    }
 }
